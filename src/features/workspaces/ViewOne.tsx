@@ -1,4 +1,4 @@
-import { Breadcrumb, Card } from "antd";
+import { Breadcrumb, Card } from "antd/es";
 import Meta from "antd/es/card/Meta";
 import Layout from "../../components/Layout";
 import { Box, Container, Flex, SimpleGrid } from "@chakra-ui/react";

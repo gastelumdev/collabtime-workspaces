@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { EditOutlined } from "@ant-design/icons";
-import { Button, Drawer, Input, Space } from "antd";
+import { default as EditOutlined } from "@ant-design/icons/EditOutlined";
+import { Button, Drawer, Input, Space } from "antd/es";
 import { Text, Checkbox, Stack } from "@chakra-ui/react";
 import { IWorkspace } from "../../types";
 

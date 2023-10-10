@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button, Drawer, Space } from "antd";
+import { Button, Drawer, Space } from "antd/es";
 import { MenuButton } from "@chakra-ui/react";
 import { BellIcon } from "@chakra-ui/icons";
 import DisplayList from "./DisplayList";

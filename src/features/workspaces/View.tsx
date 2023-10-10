@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { DeleteOutlined, EyeOutlined } from "@ant-design/icons";
-import { Breadcrumb, Card } from "antd";
+import { default as DeleteOutlined } from "@ant-design/icons/DeleteOutlined";
+import { default as EyeOutlined } from "@ant-design/icons/EyeOutlined";
+import { Breadcrumb, Card } from "antd/es";
 import Meta from "antd/es/card/Meta";
 import Layout from "../../components/Layout";
 import { Box, Container, Flex, SimpleGrid } from "@chakra-ui/react";

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Breadcrumb, ConfigProvider, Space, Tag } from "antd";
+import { Breadcrumb, ConfigProvider, Space, Tag } from "antd/es";
 import Layout from "../../components/Layout";
 import {
     Box,

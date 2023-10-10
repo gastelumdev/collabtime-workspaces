@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Avatar, Badge, List, Space, Tag } from "antd";
+import { Avatar, Badge, List, Space, Tag } from "antd/es";
 
 const data = [
     {
