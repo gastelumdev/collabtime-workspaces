@@ -26,7 +26,7 @@ const columns: ColumnsType<DataType> = [
         dataIndex: "name",
         key: "name",
         width: "100px",
-        render: (text) => <a>{text}</a>,
+        // render: (text) => <a>{text}</a>,
     },
     {
         title: "Age",
@@ -66,8 +66,8 @@ const columns: ColumnsType<DataType> = [
         key: "action",
         render: (_, record) => (
             <Space size="middle">
-                <a>Invite {record.name}</a>
-                <a>Delete</a>
+                <p>Invite {record.name}</p>
+                <p>Delete</p>
             </Space>
         ),
     },

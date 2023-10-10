@@ -2,7 +2,7 @@ import { Breadcrumb, Card } from "antd/es";
 import Meta from "antd/es/card/Meta";
 import Layout from "../../components/Layout";
 import { Box, Container, Flex, SimpleGrid } from "@chakra-ui/react";
-import { useParams } from "react-router-dom";
+import { Navigate, useParams, useNavigate } from "react-router-dom";
 import { IWorkspace } from "../../types";
 
 const data = [
@@ -41,6 +41,7 @@ const dataCollectionSet = {
 
 const ViewOne = () => {
     const { id } = useParams();
+    const navigate = useNavigate();
 
     const workspace: IWorkspace = data.filter((item) => {
         return item._id === id;
@@ -74,13 +75,17 @@ const ViewOne = () => {
                         templateColumns="repeat(auto-fill, minmax(300px, 1fr))"
                     >
                         {workspace.tools.dataCollections.access > 0 ? (
-                            <a
-                                href={`/workspaces/${workspace._id}/dataCollections/${dataCollectionSet._id}`}
+                            <Card
+                                bodyStyle={{ height: "200px" }}
+                                hoverable
+                                onClick={() =>
+                                    navigate(
+                                        `/workspace/${workspace._id}/dataCollections/${dataCollectionSet._id}`
+                                    )
+                                }
                             >
-                                <Card bodyStyle={{ height: "200px" }} hoverable>
-                                    <Meta title="Data Collections" />
-                                </Card>
-                            </a>
+                                <Meta title="Data Collections" />
+                            </Card>
                         ) : null}
                         {workspace.tools.taskLists.access > 0 ? (
                             <a href={`/workspaces/${workspace._id}/tasks`}>
